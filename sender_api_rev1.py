@@ -9,7 +9,7 @@ if choice == "N" or choice == "n":
 	accessToken = input("Enter your access token: ")
 	accessToken = "Bearer " + accessToken
 else: 
-	accessToken = "Bearer OTExN2JhYTgtNzkzMS00NzhmLWFhYTctNzA1YTViOWY3NDI2MjA5ZTI3NGMtYjM0_P0A1_958dad28-3e63-44bf-8f25-05fbd7ae4937"
+	accessToken = "Bearer ..................."
 
 print(accessToken)
 
