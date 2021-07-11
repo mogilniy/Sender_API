@@ -132,12 +132,13 @@ def autent():
 
 #service = gmail_authenticate()
 service = build('gmail', 'v1', credentials=autent())
+'''
 print ("=====================================")
 print (service.users())
 print ("=====================================")
 print ("=====================================")
 print ("=====================================")
-
+'''
 # test send email
 send_message(service, "g.mogilniy@gmail.com", "This is a subject from pyton", 
             "This is the body of the email send",[] )
