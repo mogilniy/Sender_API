@@ -6,8 +6,8 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 
 # If modifying these scopes, delete the file token.json.
-SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
-##SCOPES = ['https://mail.google.com/']
+#SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
+SCOPES = ['https://mail.google.com/']
 def main():
     """Shows basic usage of the Gmail API.
     Lists the user's Gmail labels.
