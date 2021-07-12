@@ -1,6 +1,7 @@
-#print("jdshfjdshfjdshf")
-i=0
-while i<15:
-    print(i)
-    i=i+1
-    
+import sys
+if __name__ == "__main__":
+    i=len(sys.argv)
+    ii=1
+    while ii<i:
+        print(sys.argv[ii])
+        ii=ii+1
