@@ -5,7 +5,7 @@ import json
 
 Token=input("Input your access token: ")
 if Token == "auto":
-	accessToken = "Bearer your_code"
+	accessToken = "Bearer ZDNhZDIyN2ItNjhmNi00MjE3LTgzNjQtNDA4OTVlZDNkOWNhMGFmYjcxMzYtZTJk_P0A1_958dad28-3e63-44bf-8f25-05fbd7ae4937"
 else: 
 	accessToken=Token
 
@@ -29,4 +29,12 @@ def name_all_group():
       break
     n=n+1
   return name_group
-print("name of all group: ", name_all_group())
+def get_rooms():
+  s=""
+  for i in name_all_group():
+    s=s+i+"\n"
+  return s
+
+#print(get_rooms())
+
+    
