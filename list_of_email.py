@@ -3,10 +3,11 @@ import time
 import requests
 import json
 
-accessToken=input("Input your access token: ")
+#accessToken=input("Input your access token: ")
+accessToken="MTg4NWM3ZDgtMTgzMS00MTc0LTg3NzYtZmVhZTg2NmI3ZWMxOWJjZmQ3YTYtNGFj_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
 
-name_room=input("Input name of your room: ")
-
+#name_room=input("Input name of your room: ")
+name_room="DevNet_teams_4"
 apiUri="https://webexapis.com/v1/rooms"
 
 r=requests.get(apiUri,
