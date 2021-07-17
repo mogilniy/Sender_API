@@ -9,12 +9,12 @@ from requests.api import request
 
 apiUri="https://webexapis.com/v1/rooms"
 
-#accessToken=sys.argv[1]
-accessToken="MTg4NWM3ZDgtMTgzMS00MTc0LTg3NzYtZmVhZTg2NmI3ZWMxOWJjZmQ3YTYtNGFj_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
-#name_room=sys.argv[2]
-name_room="DevNet_team_4"
-#send_mess=sys.argv[3]
-send_mess="sen 1 mes"
+accessToken=sys.argv[1]
+#accessToken="MTg4NWM3ZDgtMTgzMS00MTc0LTg3NzYtZmVhZTg2NmI3ZWMxOWJjZmQ3YTYtNGFj_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
+name_room=sys.argv[2]
+#name_room="DevNet_team_4"
+send_mess=sys.argv[3]
+#send_mess="sen 1 mes"
 #print(accessToken)
 #access_token = 'your_token_here'  
 url = 'https://webexapis.com/v1/rooms'
@@ -67,12 +67,13 @@ def list_of_email():
 #print (id_room())
 
 print(list_of_email())
-params={'roomId': roomId, "text": send_mess}
-uri_member="https://webexapis.com/v1/messages"
-t=requests.put(uri_member,
-               headers=headers, params=params
-              )
-t1=requests.put(uri_member,headers=headers,params=params)
-json_data_t = t.json()
-print (json_data_t)              
+
+url1 = "https://webexapis.com/v1/messages"
+params1={
+  "roomId": roomId,
+  "text": send_mess
+}
+rr=requests.post(url1,headers=headers,json=params1)
+gg=rr.json()
+print(gg)
 
