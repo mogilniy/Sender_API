@@ -8,11 +8,11 @@ import sys
 apiUri="https://webexapis.com/v1/rooms"
 
 #accessToken="NzMyODZiMTMtZjU3NS00NjlkLWFmYzMtNTllNmZkOTM2MDBhMjNiZjI4NTQtMDIx_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
-#accessToken=sys.argv[1]
-accessToken="MTg4NWM3ZDgtMTgzMS00MTc0LTg3NzYtZmVhZTg2NmI3ZWMxOWJjZmQ3YTYtNGFj_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
+accessToken=sys.argv[1]
+#accessToken="MTg4NWM3ZDgtMTgzMS00MTc0LTg3NzYtZmVhZTg2NmI3ZWMxOWJjZmQ3YTYtNGFj_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
 
-#name_room=sys.argv[2]
-name_room="DevNet_team_4"
+name_room=sys.argv[2]
+#name_room="DevNet_team_4"
 #print(accessToken)
 #access_token = 'your_token_here'  
 url = 'https://webexapis.com/v1/rooms'
