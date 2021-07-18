@@ -6,7 +6,7 @@ import sys
 
 apiUri="https://webexapis.com/v1/rooms"
 
-#accessToken="NzMyODZiMTMtZjU3NS00NjlkLWFmYzMtNTllNmZkOTM2MDBhMjNiZjI4NTQtMDIx_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
+#accessToken=""
 accessToken=sys.argv[1]
 #print(accessToken)
 #access_token = 'your_token_here'  
