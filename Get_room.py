@@ -6,7 +6,7 @@ import sys
 
 apiUri="https://webexapis.com/v1/rooms"
 
-#accessToken=""
+#accessToken="Zjg2YTBlMGUtMWFhOC00ODYwLWI0MjgtOTc1MTNjNDAzODMxYTY5YTEzMzAtMDEz_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
 accessToken=sys.argv[1]
 #print(accessToken)
 
@@ -25,13 +25,10 @@ def name_all_group():
   noe=len(json_data["items"])
   name_group=[]
   n=0
-  while True:
-    if n<noe:
+  while n<noe:
       x=json_data["items"][n]["title"]
-      name_group.append(x) 
-    else:
-      break
-    n=n+1
+      name_group.append(x)   
+      n=n+1
   return name_group
 temp=name_all_group()
 intl=len(temp)
