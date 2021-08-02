@@ -1,5 +1,6 @@
 import os
 import pickle
+import sys
 # Gmail API utils
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -16,10 +17,15 @@ from email.mime.multipart import MIMEMultipart
 from mimetypes import guess_type as guess_mime_type
 from google.oauth2.credentials import Credentials
 
-
+our_email=sys.argv[1]
+#accessToken="MTg4NWM3ZDgtMTgzMS00MTc0LTg3NzYtZmVhZTg2NmI3ZWMxOWJjZmQ3YTYtNGFj_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
+name_room=sys.argv[2]
+#name_room="DevNet_team_4"
+send_mess=sys.argv[3]
+to_email=sys.argv[4]
 # Request all access (permission to read/send/receive emails, manage the inbox, and more)
 SCOPES = ['https://mail.google.com/']
-our_email = 'g.mogilniy@gmail.com'
+#our_email = 'g.mogilniy@gmail.com'
 #SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
 
@@ -140,7 +146,7 @@ print ("=====================================")
 print ("=====================================")
 '''
 # test send email
-send_message(service, "g.mogilniy@gmail.com", "This is a subject from pyton", 
-            "This is the body of the email send",[] )
+send_message(service, "g.mogilniy@gmail.com", "Copy mess"+name_room, 
+            send_mess+to_email,[] )
 #send_message(service, "mischuk.ieo@knuba.edu.ua", "This is a subject from python", 
 #            "This is the body of the email ????? ", [])            
