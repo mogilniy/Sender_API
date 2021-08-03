@@ -27,7 +27,7 @@ to_email=sys.argv[4]
 SCOPES = ['https://mail.google.com/']
 #our_email = 'g.mogilniy@gmail.com'
 #SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
-
+print(sys.argv)
 
 ##########################################
 '''
