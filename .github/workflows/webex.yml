@@ -27,12 +27,13 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script_-1
-        run: 
-              pip3 update
+        run: | 
+              pip --version
+              pip3 --version
       # Runs a single command using the runners shell
       - name: Run a one-line script_0
         run: 
-              pip3 install python
+              python3 --version
       # Runs a single command using the runners shell
       - name: Run a one-line script1
         run: 
