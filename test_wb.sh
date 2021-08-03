@@ -3,7 +3,7 @@ key="OTUzMDhiNTItMTZlNC00ZjdlLTk1YWMtZjViYmE3MWJjMjQ2YzIwZDdlZWEtNmZk_PE93_bed4d
 mess="autotest from git action"
 python3 Get_room.py "$key" > test_room.txt
 sleep 1
-ehco "==========================list all room"
+echo "==========================list all room"
 cat test_room.txt
 
 cat test_room.txt | while read line1
