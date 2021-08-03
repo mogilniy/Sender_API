@@ -2,7 +2,8 @@ import os
 import pickle
 import sys
 # Gmail API utils
-from googleapiclient.discovery import build
+
+from google.apiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 # for encoding/decoding messages in base64
