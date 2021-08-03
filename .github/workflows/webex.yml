@@ -26,6 +26,10 @@ jobs:
       - uses: actions/checkout@main
 
       # Runs a single command using the runners shell
+      - name: Run a one-line script_0
+        run: 
+              pip3 install python
+      # Runs a single command using the runners shell
       - name: Run a one-line script1
         run: 
               pip3 install flask
