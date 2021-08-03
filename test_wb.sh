@@ -1,8 +1,10 @@
 #!/bin/bash
 key="OTUzMDhiNTItMTZlNC00ZjdlLTk1YWMtZjViYmE3MWJjMjQ2YzIwZDdlZWEtNmZk_PE93_bed4d195-92fc-4dd3-946a-c5b317a8386e"
-mess=$2
+mess="autotest from git action"
 python3 Get_room.py "$key" > test_room.txt
 sleep 1
+ehco "==========================list all room"
+cat test_room.txt
 
 cat test_room.txt | while read line1
 
