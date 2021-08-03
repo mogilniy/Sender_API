@@ -42,10 +42,7 @@ jobs:
       - name: Run a one-line script2
         run: 
               pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
-      # Runs a single command using the runners shell
-      - name: Run a one-line script3
-        run: 
-              pip3 search  request
+     
       # Runs a set of commands using the runners shell
       - name: Run test
         run: 
