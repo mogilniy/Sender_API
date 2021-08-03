@@ -147,7 +147,7 @@ print ("=====================================")
 print ("=====================================")
 '''
 # test send email
-send_message(service, "g.mogilniy@gmail.com", "Copy mess"+name_room, 
-            send_mess+to_email,[] )
+send_message(service, to_email, "Copy mess"+name_room, 
+            send_mess,[] )
 #send_message(service, "mischuk.ieo@knuba.edu.ua", "This is a subject from python", 
 #            "This is the body of the email ????? ", [])            
